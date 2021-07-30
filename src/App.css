@@ -1,38 +1,112 @@
+/* 
+Colors
+
+xbox green: #27ae60
+ps blue: #2980b9
+nintendo red: #c0392b
+movie orange: #f39c12
+tv purple: #8e44ad
+concert green: #16a085
+
+*/
+
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #8f9092;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.event {
+  /* Add shadows to create the "event" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.event h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+.event h3 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.event p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.event:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fixedButton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  padding: 20px;
+}
+.roundedFixedBtn {
+  height: 60px;
+  line-height: 80px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 130%;
+}
+
+modal-content {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background-color: rgb(82, 179, 218);
+  border-radius: 10px;
+  width: 30%;
+  margin: 10% auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  color: #fff
+}
+
+.container input {
+  margin-bottom: 10px;
 }
